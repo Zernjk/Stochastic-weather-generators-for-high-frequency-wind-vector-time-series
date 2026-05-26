@@ -1,0 +1,16 @@
+# Stochastic Weather Generators: Weather State Preprocessing
+
+This repository contains the data preprocessing and weather state generation 
+script for the paper: **"Stochastic weather generators for high-frequency wind vector time series"**.
+
+## About the Project
+
+In high-frequency meteorological modeling, accurately capturing periods of 
+extreme volatility (e.g., thunderstorms, fast-moving fronts) is a major challenge. 
+To improve the performance of our deep generative model (Time VQ-VAE) for wind vectors, 
+we condition the generator on discrete weather states. 
+
+This script processes raw, minute-by-minute surface meteorological (MET) data 
+from the ARM facility in Lamont, Oklahoma. It handles missing data imputation 
+via Kalman Filtering and classifies each 10-minute time block into a 
+discrete $2^4$ factorial weather state based on barometric pressure and precipitation.

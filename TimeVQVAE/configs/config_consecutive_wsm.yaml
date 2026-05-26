@@ -1,0 +1,54 @@
+dataset:
+  data_scaling: False
+  batch_sizes:
+    stage1: 16
+    stage2: 16
+  num_workers: 0
+
+exp_params:
+  lr: 0.005
+  linear_warmup_rate: 0.05
+  min_lr: 0.0005
+
+trainer_params:
+  max_steps:
+    stage1: 40000 
+    stage2: 40000
+  val_check_interval:
+    stage1: 1000
+    stage2: 1000
+
+encoder:
+  init_dim: 64  # initial dimension
+  hid_dim: 128  
+  codebook_dim: 64 # bottleneck
+  n_resnet_blocks: 2
+
+decoder:
+  n_resnet_blocks: 2
+
+VQ-VAE:
+  codebook_sizes: 512
+  kmeans_init: True
+  codebook_dim: 64
+
+
+MaskGIT:
+  choice_temperatures: 50 # higher temp -> higher sample diversity
+  T: 50 # num sampling (iterative decoding) steps # same as B in paper
+
+  prior_model:
+    hidden_dim: 128 # 64 -> 128 for consecutive wsm 
+    n_layers: 2
+    heads: 2
+    ff_mult: 1
+    use_rmsnorm: True
+    p_unconditional: 0.2
+    model_dropout: 0.3
+    emb_dropout: 0.3
+
+  connect_period: 60
+
+
+evaluation:
+  batch_size: 64

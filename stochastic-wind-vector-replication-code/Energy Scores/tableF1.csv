@@ -1,0 +1,7 @@
+generator,synth_type,n,min,max,mean,median,Q1,Q3,IQR
+Embedded,Independent,185,-8.33,7.04,0.35,0.55,-2.12,3.12,5.24
+Embedded,Consecutive,185,-20.14,25.3,5.73,7.32,-4.39,14.41,18.8
+Features,Independent,185,-22.98,40.85,1.81,-4.69,-14.9,16.49,31.39
+Features,Consecutive,185,-10.89,9.56,0.93,0.91,-3.67,5.57,9.24
+No Weather,Independent,185,-8.18,17.89,0.02,-3.12,-5.45,4.62,10.07
+No Weather,Consecutive,185,-33.19,51.49,15.86,22.4,-2.78,35.71,38.49
