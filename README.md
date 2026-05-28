@@ -236,5 +236,5 @@ If using this repository, please cite the accompanying paper:
 ```text
 Stochastic weather generators for high-frequency wind vector time series.
 ```
-- Software DOI: [10.5281/zenodo.SOFTWARE_ID](https://doi.org/10.5281/zenodo.SOFTWARE_ID)
-- Dataset DOI: [10.5281/zenodo.20421181](https://doi.org/10.5281/zenodo.20421181)
+- Software DOI: [10.5281/zenodo.20421181](https://doi.org/10.5281/zenodo.20421181)
+- Dataset DOI: [10.5281/zenodo.20421237](https://doi.org/10.5281/zenodo.20421237)
