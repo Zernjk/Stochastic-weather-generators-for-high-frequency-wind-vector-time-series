@@ -630,7 +630,7 @@ readr::write_csv(result$pct_summary,
 ggsave(file.path(output_dir, "figF1.pdf"),
        result$plot, width = combined_width, height = combined_height, dpi = dpi)
 
-cat("Combined plot saved to:", file.path(combined_dir, "figF1.pdf"), "\n")
+cat("Combined plot saved to:", file.path(output_dir, "figF1.pdf"), "\n")
 
 # ============================================================
 # Individual day + hourly plots for requested combinations
