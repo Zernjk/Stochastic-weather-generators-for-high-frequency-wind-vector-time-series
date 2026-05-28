@@ -34,6 +34,7 @@ This folder contains the final replication code for reproducing Figures 1, 12, 1
 The ARM data cover E13 observations from `1993-07-21 00:00:00` through `2025-09-20 00:00:00`.
 
 - `data/LamontOK_E13_19930721_20250920.csv`: combined ARM E13 data table created from daily ARM NetCDF/CDF files.
+   **Dataset DOI:** [10.5281/zenodo.20421238](https://doi.org/10.5281/zenodo.20421238) Please download the dataset from Zenodo
 - `data/training_474.csv` and `data/testing_185.csv`: complete training and testing days after minute-level imputation, created by `scripts/02_Imputation_and_Table2.R`.
 - `data/No Weather/`, `data/Features/`, and `data/Embedded/`: synthetic wind-vector outputs from the three generator/input settings. Each folder contains `independent.csv` and `consecutive.csv`, with `21 * 23 * 1440` rows of synthetic data for that setting.
 
