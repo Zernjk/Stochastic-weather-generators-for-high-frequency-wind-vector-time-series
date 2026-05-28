@@ -224,7 +224,7 @@ the paper workflows. The original daily ARM NetCDF/CDF files and ARM
 download-session files are not included because they are tied to an individual
 ARM data order and browser session. Users who want to re-download the original
 ARM files should create their own ARM order and provide their own catalog and
-cookies files as described in the replication-code README.
+cookies files as described in the [`stochastic-wind-vector-replication-code/README.md`](stochastic-wind-vector-replication-code/README.md)
 
 Local path configuration files used for the discriminative evaluation are also
 not included. They must be created by each user for their own machine.
@@ -236,3 +236,5 @@ If using this repository, please cite the accompanying paper:
 ```text
 Stochastic weather generators for high-frequency wind vector time series.
 ```
+- Software DOI: [10.5281/zenodo.SOFTWARE_ID](https://doi.org/10.5281/zenodo.SOFTWARE_ID)
+- Dataset DOI: [10.5281/zenodo.20421181](https://doi.org/10.5281/zenodo.20421181)
